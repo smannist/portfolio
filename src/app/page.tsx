@@ -1,11 +1,9 @@
 import { NextPage } from "next";
 
+import Header from "@/app/components/Header";
+
 const Home: NextPage = () => {
-  return (
-    <div className="container">
-      <p>Hello world!</p>
-    </div>
-  );
+  return <Header />;
 };
 
 export default Home;

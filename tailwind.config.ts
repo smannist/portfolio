@@ -14,6 +14,11 @@ export default {
         md: "1.5rem",
         lg: "2rem"
       }
+    },
+    fontFamily: {
+      sans: ["var(--font-opensans)"],
+      mono: ["var(--font-roboto-mono)"],
+      noto: ["var(--font-noto-serif)"]
     }
   },
   plugins: []
