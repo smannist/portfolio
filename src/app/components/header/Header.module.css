@@ -25,6 +25,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .me {
+    font-size: 0.7rem;
+  }
+}
+
 .textContainer {
   width: 30%;
   font-size: 0.9rem;
@@ -32,16 +38,27 @@
 }
 
 .iconContainer {
-  margin-top: 10px;
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5px;
+  list-style: none;
 }
 
 .githubIcon:hover {
   color: #333;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .linkedinIcon:hover {
   color: #0073b1;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.iconList {
+  gap: 16px;
 }

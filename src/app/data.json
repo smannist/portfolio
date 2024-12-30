@@ -4,5 +4,11 @@
     "project_date": "05/2023 - 09/2023",
     "image": "/weatherbased.png",
     "repository": "https://github.com/HelsinkiUniCollab/WeatherBasedRecommender"
+  },
+  {
+    "name": "CodeScape",
+    "project_date": "09/2024 - 12/2024",
+    "image": "/codescape.png",
+    "repository": "https://github.com/smannist/CodeScape"
   }
 ]

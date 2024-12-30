@@ -10,13 +10,36 @@ const Header: NextComponentType = () => {
       <div className={styles.nameContainer}>
         <p className={`${styles.name} font-noto`}>Sami</p>
         <p className={`${styles.name} font-noto`}>Männistö</p>
-        <div className={styles.iconContainer}>
-          <FontAwesomeIcon icon={faGithub} className={`${styles.githubIcon}`} />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className={`${styles.linkedinIcon}`}
-          />
-        </div>
+        <ul className={styles.iconContainer} style={{ marginTop: "4px" }}>
+          <li>
+            <a
+              href="https://github.com/smannist"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.iconLink}
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className={styles.githubIcon}
+                style={{ width: "40px", height: "40px" }}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/smannist/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.iconLink}
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                style={{ width: "40px", height: "40px" }}
+                className={styles.linkedinIcon}
+              />
+            </a>
+          </li>
+        </ul>
       </div>
       <div className={styles.textContainer}>
         <p className={`${styles.me} font-noto`}>
