@@ -10,5 +10,17 @@
     "project_date": "09/2024 - 12/2024",
     "image": "/codescape.png",
     "repository": "https://github.com/smannist/CodeScape"
+  },
+  {
+    "name": "Dungeon Generator",
+    "project_date": "01/2023 - 03/2023",
+    "image": "/dg.png",
+    "repository": "https://github.com/smannist/dungeon-generator"
+  },
+  {
+    "name": "Tetris",
+    "project_date": "03/2023 - 05/2023",
+    "image": "/tetris.png",
+    "repository": "https://github.com/smannist/ot2023"
   }
 ]
