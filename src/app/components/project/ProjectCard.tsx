@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
 import Image from "next/image";
 
 import { Card, CardContent, Typography, Button } from "@mui/material";
@@ -10,25 +6,6 @@ import StarIcon from "@mui/icons-material/Star";
 import { Project } from "@/app/types";
 
 const ProjectCard = ({ project }: { project: Project }) => {
-  const [stars, setStars] = useState<number | null>(null);
-
-  useEffect(() => {
-    const fetchStars = async () => {
-      try {
-        const response = await fetch(
-          `https://api.github.com/repos/${new URL(project.repository).pathname.substring(1)}`
-        );
-        if (!response.ok) throw new Error("Failed to fetch repository data");
-        const data = await response.json();
-        setStars(data.stargazers_count);
-      } catch (error) {
-        console.error("Error fetching star count:", error);
-      }
-    };
-
-    fetchStars();
-  }, [project.repository]);
-
   return (
     <Card
       style={{
@@ -60,7 +37,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           <Typography variant="h6">{project.name}</Typography>
           <StarIcon style={{ color: "gold" }} />
           <Typography variant="body2" style={{ fontWeight: "bold" }}>
-            {stars !== null ? stars : "N/A"}
+            {project.stars}
           </Typography>
         </div>
         <Typography variant="body2" style={{ marginBottom: "20px" }}>

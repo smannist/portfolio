@@ -3,4 +3,5 @@ export interface Project {
   project_date: string;
   image: string;
   repository: string;
+  stars: number;
 }
