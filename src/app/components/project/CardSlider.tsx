@@ -30,7 +30,7 @@ const CardSlider = () => {
         variant="h6"
         style={{ marginBottom: "16px", marginTop: "40px" }}
       >
-        My projects
+        Some projects I have worked on
       </Typography>
       <Slider {...settings}>
         {projectData.map((project, index) => (

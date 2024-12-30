@@ -1,20 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
 import Image from "next/image";
+
 import { Card, CardContent, Typography, Button } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 
-const ProjectCard = ({ project }: { project: any }) => {
+import { Project } from "@/app/types";
+
+const ProjectCard = ({ project }: { project: Project }) => {
   const [stars, setStars] = useState<number | null>(null);
 
   useEffect(() => {
     const fetchStars = async () => {
       try {
         const response = await fetch(
-          `https://api.github.com/repos/${new URL(
-            project.repository
-          ).pathname.substring(1)}`
+          `https://api.github.com/repos/${new URL(project.repository).pathname.substring(1)}`
         );
         if (!response.ok) throw new Error("Failed to fetch repository data");
         const data = await response.json();

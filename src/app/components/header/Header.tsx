@@ -43,10 +43,10 @@ const Header: NextComponentType = () => {
       </div>
       <div className={styles.textContainer}>
         <p className={`${styles.me} font-noto`}>
-          I am an aspiring Software Developer dedicated to becoming a skilled
-          and versatile full-stack developer. I am also passionate about
-          artificial intelligence, with a particular interest in machine
-          learning.
+          I am an aspiring Software Developer committed to mastering full-stack
+          development and becoming a versatile professional in the field. Other
+          passions include artificial intelligence (AI), especially machine
+          learning (ML) and LLM integration.
         </p>
       </div>
     </div>
