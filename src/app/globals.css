@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .page-wrapper {
-  @apply mx-auto mt-4 flex max-w-screen-lg flex-col px-4 md:px-8;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  padding: 1rem;
 }
