@@ -25,12 +25,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .me {
-    font-size: 0.7rem;
-  }
-}
-
 .textContainer {
   width: 30%;
   font-size: 0.9rem;
@@ -61,4 +55,31 @@
 
 .iconList {
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .nameContainer {
+    width: 100%;
+    align-items: left;
+  }
+
+  .textContainer {
+    width: 90%;
+  }
+
+  .me {
+    width: 90%;
+    font-size: 0.7rem;
+  }
+
+  .iconContainer {
+    align-items: left;
+    margin-top: "20px";
+  }
 }
