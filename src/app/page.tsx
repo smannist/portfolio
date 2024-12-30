@@ -1,16 +1,16 @@
-import { NextPage } from "next";
+import { Container } from "@mui/material";
 
 import Header from "@/app/components/header/Header";
-import ProjectCard from "@/app/components/project/Project";
+import ProjectCard from "@/app/components/project/ProjectCard";
 import Footer from "@/app/components/footer/Footer";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
-    <>
+    <Container>
       <Header />
       <ProjectCard />
       <Footer />
-    </>
+    </Container>
   );
 };
 

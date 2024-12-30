@@ -19,7 +19,7 @@ const Header: NextComponentType = () => {
         </div>
       </div>
       <div className={styles.textContainer}>
-        <p className={`${styles.me} font-noto mt-3`}>
+        <p className={`${styles.me} font-noto`}>
           I am an aspiring Software Developer dedicated to becoming a skilled
           and versatile full-stack developer. I am also passionate about
           artificial intelligence, with a particular interest in machine

@@ -1,9 +1,11 @@
 .headerContainer {
   display: flex;
   gap: 2rem;
+  align-items: flex-start;
 }
 
 .nameContainer {
+  display: flex;
   flex-direction: column;
 }
 
@@ -13,17 +15,18 @@
 }
 
 .me {
-  position: fixed;
-  max-width: 20%;
-  min-width: 30%;
-  font-size: 0.8rem;
+  position: sticky;
+  top: 0;
+  font-size: 0.9rem;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.5;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .textContainer {
-  min-width: 10%;
-  max-width: 30%;
+  width: 30%;
   font-size: 0.9rem;
   line-height: 1.5;
 }
