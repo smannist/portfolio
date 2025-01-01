@@ -1,4 +1,7 @@
 import { NextComponentType } from "next";
+
+import { RoughNotation } from "react-rough-notation";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -8,8 +11,18 @@ const Header: NextComponentType = () => {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.nameContainer}>
-        <p className={`${styles.name} font-noto`}>Sami</p>
-        <p className={`${styles.name} font-noto`}>Männistö</p>
+        <div className={`${styles.name} font-noto`}>
+          <RoughNotation
+            type="highlight"
+            show={true}
+            color="#79c2c7"
+            animationDuration={3000}
+          >
+            <h1>
+              Sami <br></br> Männistö
+            </h1>
+          </RoughNotation>
+        </div>
         <ul className={styles.iconContainer} style={{ marginTop: "4px" }}>
           <li>
             <a
