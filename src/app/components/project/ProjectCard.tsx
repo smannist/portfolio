@@ -11,19 +11,21 @@ const ProjectCard = ({ project }: { project: Project }) => {
       style={{
         position: "relative",
         padding: "16px",
+        marginTop: "16px",
         boxShadow:
-          "0px -2px 10px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.1)",
+          "0px -2px 8px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.1)",
         borderRadius: "8px",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        cursor: "pointer"
+        transition: "transform 0.2s ease, box-shadow 0.2s ease"
       }}
       onMouseEnter={e => {
         e.currentTarget.style.transform = "translateY(-5px)";
-        e.currentTarget.style.boxShadow = "0px 6px 15px rgba(0, 0, 0, 0.2)";
+        e.currentTarget.style.boxShadow =
+          "0px -4px 10px rgba(0, 0, 0, 0.2), 0px 8px 20px rgba(0, 0, 0, 0.2)";
       }}
       onMouseLeave={e => {
         e.currentTarget.style.transform = "translateY(0)";
-        e.currentTarget.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.1)";
+        e.currentTarget.style.boxShadow =
+          "0px -2px 8px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.1)";
       }}
     >
       <CardContent>
