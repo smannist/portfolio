@@ -10,7 +10,7 @@ const Home = () => {
       <CardSlider />
       <HuggingFaceSpace
         spaceUrl="https://huggingface.co/spaces/Smannist/aboutme"
-        title='"Try asking the AI: "tell me about yourself"'
+        title='Try asking the AI: "tell me about yourself"'
       />
       <Footer />
     </div>
