@@ -1,8 +1,8 @@
+"use client";
+
 import Image from "next/image";
-
-import { Card, CardContent, Typography, Button } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-
+import { Card, CardContent, Typography, Button } from "@mui/material";
 import { Project } from "@/app/types";
 
 const ProjectCard = ({ project }: { project: Project }) => {

@@ -1,15 +1,11 @@
 "use client";
 
 import Slider from "react-slick";
-
+import Typography from "@mui/material/Typography";
+import ProjectCard from "./ProjectCard";
+import projectData from "../../data.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import Typography from "@mui/material/Typography";
-
-import ProjectCard from "./ProjectCard";
-
-import projectData from "../../data.json";
 
 const CardSlider = () => {
   const settings = {

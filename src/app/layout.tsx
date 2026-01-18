@@ -1,5 +1,4 @@
 import "./globals.css";
-
 import { Noto_Serif, Open_Sans, Roboto_Mono } from "next/font/google";
 
 const openSans = Open_Sans({

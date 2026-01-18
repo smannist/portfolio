@@ -1,7 +1,6 @@
-import { NextComponentType } from "next";
-
-import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { NextComponentType } from "next";
+import { Typography } from "@mui/material";
 
 const Footer: NextComponentType = () => {
   return (
@@ -9,6 +8,7 @@ const Footer: NextComponentType = () => {
       container
       justifyContent="center"
       alignItems="center"
+      gap={1}
       style={{
         padding: "1rem",
         backgroundColor: "#f8f9fa",
@@ -19,12 +19,39 @@ const Footer: NextComponentType = () => {
         right: 0
       }}
     >
+      <div
+        style={{
+          width: "32px",
+          height: "32px",
+          borderRadius: "50%",
+          backgroundColor: "#79c2c7",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+          fontWeight: "bold",
+          fontSize: "14px",
+          fontFamily: "var(--font-opensans)"
+        }}
+      >
+        SM
+      </div>
       <Typography
         variant="body2"
-        style={{ color: "#6c757d", textAlign: "center" }}
+        style={{
+          color: "#6c757d",
+          textAlign: "center",
+          display: "flex",
+          alignItems: "center",
+          gap: "4px",
+          fontFamily: "var(--font-opensans)"
+        }}
       >
-        🚧 This page is unfinished and under development. Stay tuned for
-        updates! 🚀
+        <span style={{ fontWeight: 500, color: "#495057" }}>
+          Sami Männistö
+        </span>
+        <span>©</span>
+        <span>2026</span>
       </Typography>
     </Grid>
   );

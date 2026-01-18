@@ -1,11 +1,8 @@
+import styles from "./Header.module.css";
 import { NextComponentType } from "next";
-
 import { RoughNotation } from "react-rough-notation";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
-import styles from "./Header.module.css";
 
 const Header: NextComponentType = () => {
   return (
@@ -56,7 +53,7 @@ const Header: NextComponentType = () => {
       </div>
       <div className={styles.textContainer}>
         <p className={`${styles.me} font-noto`}>
-          I am an aspiring Software Developer committed to mastering full-stack
+          I am a Software Developer committed to mastering full-stack
           development and becoming a versatile professional in the field. My other
           passions include artificial intelligence (AI). To know a bit more about me, try asking the AI at the bottom of the page.
         </p>
