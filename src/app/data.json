@@ -1,5 +1,12 @@
 [
   {
+    "name": "Yapper",
+    "project_date": "12/2025 - present",
+    "image": "/yapper.png",
+    "repository": "https://github.com/smannist/Yapper",
+    "stars": 0
+  },
+  {
     "name": "Weather-Based Recommender",
     "project_date": "05/2023 - 09/2023",
     "image": "/weatherbased.png",
